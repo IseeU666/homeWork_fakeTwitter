@@ -1,0 +1,275 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+font-family:  Helvetica, sans-serif;
+}
+
+:root {
+    --main-radius: 3px;
+    --main-padding: 5px;
+  }
+.container {
+    display: grid;
+    /*height: 100vh; не уве*/
+    grid-template-columns: .8fr 1.7fr .8fr;
+    grid-template-rows: 0.8fr 0.2fr 1.5fr 5.5fr;
+    grid-template-areas: 
+    "header header header"
+     "nav nav nav"
+     "infobar main content1"
+     "infobar main content2";
+     grid-gap:0.4rem;
+     background-color: #a7adb2;
+    }
+/*HEADER*/
+header {
+    
+    grid-area: header;
+    background-image: url(https://raw.githubusercontent.com/IseeU666/homeWork_fakeTwitter/main/bg.jpg);
+    background-size: cover;
+    background-position: center right;
+/*NAVBAR*/  
+  }
+nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28%;
+    position: relative;
+  }
+.nav_links {
+    list-style: none;
+    padding: 1px;
+}
+.nav_links li {
+    display: inline-block;
+}
+.nav_links a {
+text-decoration:none;
+display: block;
+padding: 1px;
+font-size: 10px;
+   
+}
+.nav_links p  {
+    font-size: 14px;
+}
+  main {
+    background-color: white;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-bottom: 1px solid lightgray;
+    }
+  /*upperboard thing*/
+  .main_links {
+    list-style: none;
+    padding: 0px;
+    display: block;
+    justify-content: left;
+    align-items: left;
+   }
+  .main_links ul{
+    width: auto;
+    float: left
+    
+  }
+  .main_links li {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  .main_links a {
+    text-decoration: none;
+    display: block;
+    padding: 0px;
+    text-align:center;
+  }
+  /*main body of the tweet*/
+
+  .tweets {
+    display: grid;
+   *height: 50vh;
+   grid-template-columns: 0.3fr 3fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
+  grid-template-areas:
+  "picbar headbody"
+  "picbar mainbody"
+  "picbar lowbody";
+  grid-gap: 0.2rem;
+  }
+  
+  .smallav {
+   width: 50px;
+   border-radius:90px; 
+  }
+  
+  picbar {
+  grid-area: picbar;
+  }
+  headbody {
+  grid-area: headbody;
+  }
+  
+  .headbody {
+      list-style: none;
+      margin: 0px;
+      float: left;
+     }
+  .headbody ul{
+      float: left;
+      
+  }
+  .headbody li {
+    display: inline-block;  
+    }
+  .headbody a{  
+     text-decoration: none;
+      display: block;
+     
+    
+     }
+   .icon {
+     width: 20px 
+   
+   }
+  
+  mainbody {
+  grid-area: mainbody;
+  }
+  mainbody p {
+  font-size: 14px;
+  }
+  
+  lowbody {
+  align-items: center;
+  justify-content: space-between;
+  grid-area: lowbody;
+  }
+  
+  .lowobodylinks {
+      list-style: none;
+  }
+  .lowobodylinks li {
+      display: inline-block;
+  }
+  .lowobodylinks a {
+  text-decoration:none;
+  display: block;
+  font-size: 14px;
+  }
+  
+/*INFOBAR*/    
+.infobar{
+    background-color: #a7adb2;
+    grid-area: infobar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-left: 30px;    
+  }
+    .infobar p {
+    font-size: 14px;
+  
+  }
+  .profilepic {
+    width: 150px;
+    border-radius:100px; 
+  }
+    .infobar li {
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+  }
+  .infobar a {
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+  }
+    .photogallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .gallery-img {
+    flex-basis: 23%;
+    margin: 20px;
+            
+  }
+  
+  .gallery-img img {
+    width: 100%;
+  }
+  
+/*CONTENT1*/ 
+  .content1 {
+    background-color: white;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-right: 30px;
+    display: block;
+  }
+.suggestion {
+        display: block;
+      }
+.suggestion h4 {
+        margin-left: 10px;
+      }
+.suggestion img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        margin-left: 20px;
+            }
+      
+.follownew {
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid grey;
+        font-size: 14px;
+        font-weight: 100;
+        width: 100px;
+        color: rgba(28, 119, 194, 1);
+        margin-bottom: 10px;
+      }
+      
+/*CONTENT2*/ 
+
+  .content2 {
+    background-color: white;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-right: 30px;
+  }
+  .trendlist li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .trendlist a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: 10px;
+  }
+
+
+  button {
+    background-color: rgba(28, 119, 194,1);
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 100;
+    width: 150px;
+    /*position: relative;
+    right:300px;*/
+    color: white;
+    margin-right: 10px;
+    margin: 10px;
+    
+}
+  
+  
