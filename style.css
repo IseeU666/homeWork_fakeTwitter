@@ -193,20 +193,17 @@ font-size: 10px;
     flex-flow: row wrap;
     justify-content: space-around;
   }
-    .gallery-img {
-   flex-basis: 23%;
-   margin: 20px;
-   flex-basis: auto;
-   margin: 20px;
-   border-radius: 12px;
-   border: 1px solid #ddd;
-   padding: 5px;
   }
-    .gallery-img img {
-   width: 50%;
+  .gallery-img {
+    flex-basis: 23%;
+    margin: 20px;
+            
+  }
+  
+  .gallery-img img {
+    width: 100%;
+  }
    
-
-}
 /*CONTENT1*/ 
   .content1 {
     background-color: white;
