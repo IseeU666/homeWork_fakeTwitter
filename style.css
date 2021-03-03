@@ -192,7 +192,7 @@ font-size: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-  }
+  
   }
   .gallery-img {
     flex-basis: 23%;
