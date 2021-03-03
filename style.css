@@ -27,7 +27,7 @@ font-family:  Helvetica, sans-serif;
 header {
     
     grid-area: header;
-    background-image: url(..//img/bg.jpg);
+    background-image: url(https://raw.githubusercontent.com/IseeU666/homeWork_fakeTwitter/main/bg.jpg);
     background-size: cover;
     background-position: center right;
 /*NAVBAR*/  
